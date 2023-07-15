@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blood Donar Database</title>
+    <link rel="stylesheet" href="Blood Donor Database.css">
+</head>
+<body>
+    <h1>Blood Donating Society</h1>
+    <h3>Blood Donor Database</h3>
+    <form action="">
+        <label for="name">Name</label> <input type="text" id="name" placeholder="Your Full Name">
+        <br><br>
+        <label for="fathername">Father Name</label> <input type="text" id="fathername" placeholder="Your Father's Name">
+        <br><br>
+        <label for="">Gender</label>
+            <input type="radio" id="male"> <label for="male">Male</label>
+            <input type="radio" id="female"> <label for="female">Female</label>
+            <input type="radio" id="dontspecify"> <label for="dontspecify">Don't Specify</label>
+        <br><br>
+        <label for="age">Age</label> <input type="text" id="age">
+        <br><br>
+        <label for="registrationnumber">Registration Number</label> <input type="text" id="registrationnumber" placeholder="2015-CH-438">
+        <br><br>
+        <label for="session">Session</label> <input type="text" id="session" placeholder="2015">
+        <br><br>
+        <label for="">Program</label>
+            <select>
+                <optgroup label="Department of Chemical and Polymer Engineering">
+                    <option>BSc Chemical Engineering</option>
+                    <option>MSc Chemical Engineering</option>
+                </optgroup>
+                
+                <optgroup label="Department of Electrical, Electronics and Telecommunication Engineering">
+                    <option>BSc Electrical (Power) Engineering</option>
+                    <option>BSc Electrical (Telecommunication) Engineering</option>
+                    <option>MSc Electrical Engineering</option>
+                </optgroup>
+                
+                <optgroup label="Department of Mechanical, Mechatronics and Control Engineering">
+                    <option selected>BSc Mechatronics and Control Engineering</option>
+                    <option>MSc Mechatronics and Control Engineering</option>
+                </optgroup>
+                
+                <optgroup label="Department of Textile Engineering">
+                    <option>BSc Textile Engineering</option>
+                    <option>MSc Textile Engineering</option>
+                    <option>PhD Textile Engineering</option>
+                </optgroup>
+                
+                <optgroup label="Department of Humanities and Basic Sciences">
+                    <option>BS Environmental Sciences</option>
+                    <option>BS Chemistry</option>
+                    <option>BS Physics</option>
+                    <option>BS Mathematics</option>
+                    <option>BBA</option>
+                    <option>MBA </option>
+                </optgroup>
+            </select>
+        <br><br>
+        <label for="contact">Contact Numbers</label> <input type="tel" id="contact" placeholder="03xxxxxxxxx"> <input type="tel" placeholder="03xxxxxxxxx">
+        <br><br>
+        <label for="email">Email</label> <input type="email" id="email" placeholder="babarazam@gmail.com">
+        <br><br>
+        <label for="">Blood Group</label> <input list="bloodgroup">
+            <datalist id="bloodgroup">
+                <option value="A+"></option>
+                <option value="A-"></option>
+                <option value="B+"></option>
+                <option value="B-"></option>
+                <option value="AB+"></option>
+                <option value="AB-"></option>
+                <option value="O+"></option>
+                <option value="O-"></option>
+                <option value="Don't Know"></option>
+            </datalist>
+        <br><br>
+        <label for="">Do you have any of the following diseases?</label> <br>
+            <input type="checkbox" id="hepatitusa"> <label for="hepatitusa">Hepatitus A</label>
+            <input type="checkbox" id="hepatitusb"> <label for="hepatitusb">Hepatitus B</label>
+            <input type="checkbox" id="cancer"> <label for="cancer">Cancer</label>
+            <input type="checkbox" id="hiv"> <label for="hiv">HIV</label>
+        <br><br>
+        <label for="previousdonation">Previous Donation</label> <input type="date" id="previousdonation">
+        <br><br>
+        <label for="">Are you available for donation in the future?</label> <br>
+            <input type="radio" id="yes"> <label for="yes">Yes</label>
+            <input type="radio" id="no"> <label for="no">No</label>
+        <br><br>
+        <input type="submit" value="Save">
+        <input type="reset" value="Submit Another Response">
+    </form>
+</body>
+</html>
